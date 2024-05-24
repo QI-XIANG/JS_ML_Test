@@ -60,6 +60,6 @@ function gotResult(error, results) {
         element.innerHTML = error;
     } else {
         let num = results[0].confidence * 100;
-        element.innerHTML = "圖片識別結果: " + results[0].label + "<br>信心水準: " + num.toFixed(2) + "%";
+        element.innerHTML = "圖片辨識結果: " + results[0].label + "<br>信心水準: " + num.toFixed(2) + "%";
     }
 }
