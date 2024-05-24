@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡易圖片辨識</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">圖片辨識</h1>
+    <h2 style="text-align: center;">採用 MobileNet and ml5.js</h2>
+    <div style="display: flex;justify-content: center;">
+        <label for="fileInput">請上傳圖片檔案以進行預覽</label>
+        <input type="file" id="fileInput" accept="image/*" multiple>
+    </div>
+    <div id="result" style="text-align: center;margin-top: 20px;">請上傳圖片 ...</div>
+    <div style="display: flex;justify-content: center;">
+        <div id="preview"></div>
+    </div>
+</body>
+<script src="./src/index.js"></script>
+
+</html>
